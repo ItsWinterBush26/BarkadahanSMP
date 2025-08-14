@@ -1,54 +1,58 @@
 name: Minecraft Server (Educational)
 
 on:
-  workflow_dispatch:  # Manually trigger
+  workflow_dispatch:  # Manual trigger only
 
 jobs:
   minecraft:
     runs-on: ubuntu-latest
-    timeout-minutes: 360  # Max 6 hours
+    timeout-minutes: 360  # Max 6 hours (GitHub limit)
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Java
+      - name: Set up Java 21
         uses: actions/setup-java@v4
         with:
-          java-version: '21'  # Minecraft 1.17+ needs Java 17
+          distribution: 'temurin'
+          java-version: '21'  # Minecraft 1.21.8+ requires Java 21
 
-      - name: Install rclone (for Google Drive)
-        run: |
-          curl -O https://downloads.rclone.org/rclone-current-linux-amd64.deb
-          sudo dpkg -i rclone-current-linux-amd64.deb
+      - name: Install rclone (Google Drive sync)
+        run: sudo apt-get update -qq && sudo apt-get install -y rclone
 
-      - name: Configure rclone with Google Drive
+      - name: Configure Google Drive
         env:
           RCLONE_CONFIG: |
             [gdrive]
             type = drive
             scope = drive
-            service_account_file = /home/runner/work/_temp/credentials.json
-            team_drive = 
-          RCLONE_CREDENTIALS: ${{ secrets.GDRIVE_CREDENTIALS }}  # Base64-encoded credentials.json
+            service_account_file = /tmp/credentials.json
+          RCLONE_CREDENTIALS: ${{ secrets.GDRIVE_CREDENTIALS }}  # Base64-encoded
         run: |
           mkdir -p ~/.config/rclone
           echo "$RCLONE_CONFIG" > ~/.config/rclone/rclone.conf
-          echo "$RCLONE_CREDENTIALS" | base64 --decode > /home/runner/work/_temp/credentials.json
+          echo "$RCLONE_CREDENTIALS" | base64 --decode > /tmp/credentials.json
 
-      - name: Download Minecraft Server & World
+      - name: Download Server & World
         run: |
-          wget https://fill-data.papermc.io/v1/objects/aa6357abc6e54187bf45ceb5c78c2839ca7e22f988659223ff2e7147c1554f61/paper-1.21.8-31.jar -O server.jar  # Get latest server.jar
-          rclone copy gdrive:/minecraft/world ./world/  # Sync world from GDrive
+          # Download PaperMC 1.21.8 (latest stable)
+          wget https://api.papermc.io/v2/projects/paper/versions/1.21.8/builds/31/downloads/paper-1.21.8-31.jar -O server.jar
+          # Sync world from Google Drive (skip if first run)
+          rclone copy -P gdrive:/minecraft/world ./world/ || echo "No existing world found (first run)."
 
       - name: Start Minecraft Server
         run: |
-          java -Xmx8G -Xms1G -jar server.jar nogui  # Adjust RAM as needed
-          # Auto-accept EULA
-          sed -i 's/eula=false/eula=true/' eula.txt
-          java -Xmx8G -Xms1G -jar server.jar nogui
+          # Accept EULA automatically
+          echo "eula=true" > eula.txt
+          # Start server with auto-restart (max 5h 50m to allow clean shutdown)
+          while [ $SECONDS -lt 21000 ]; do
+            java -Xmx6G -Xms2G -jar server.jar nogui
+            echo "Server stopped/crashed. Restarting in 5 seconds..."
+            sleep 5
+          done
 
-      - name: Upload World Back to Google Drive
-        if: always()  # Even if job fails/cancels
+      - name: Backup World to Google Drive
+        if: always()  # Upload even if job fails
         run: |
-          rclone copy ./world/ gdrive:/minecraft/world/ --progress
+          rclone copy -P ./world/ gdrive:/minecraft/world/ --drive-chunk-size 64M
