@@ -1,0 +1,54 @@
+name: Minecraft Server (Educational)
+
+on:
+  workflow_dispatch:  # Manually trigger
+
+jobs:
+  minecraft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360  # Max 6 hours
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '21'  # Minecraft 1.17+ needs Java 17
+
+      - name: Install rclone (for Google Drive)
+        run: |
+          curl -O https://downloads.rclone.org/rclone-current-linux-amd64.deb
+          sudo dpkg -i rclone-current-linux-amd64.deb
+
+      - name: Configure rclone with Google Drive
+        env:
+          RCLONE_CONFIG: |
+            [gdrive]
+            type = drive
+            scope = drive
+            service_account_file = /home/runner/work/_temp/credentials.json
+            team_drive = 
+          RCLONE_CREDENTIALS: ${{ secrets.GDRIVE_CREDENTIALS }}  # Base64-encoded credentials.json
+        run: |
+          mkdir -p ~/.config/rclone
+          echo "$RCLONE_CONFIG" > ~/.config/rclone/rclone.conf
+          echo "$RCLONE_CREDENTIALS" | base64 --decode > /home/runner/work/_temp/credentials.json
+
+      - name: Download Minecraft Server & World
+        run: |
+          wget https://fill-data.papermc.io/v1/objects/aa6357abc6e54187bf45ceb5c78c2839ca7e22f988659223ff2e7147c1554f61/paper-1.21.8-31.jar -O server.jar  # Get latest server.jar
+          rclone copy gdrive:/minecraft/world ./world/  # Sync world from GDrive
+
+      - name: Start Minecraft Server
+        run: |
+          java -Xmx8G -Xms1G -jar server.jar nogui  # Adjust RAM as needed
+          # Auto-accept EULA
+          sed -i 's/eula=false/eula=true/' eula.txt
+          java -Xmx8G -Xms1G -jar server.jar nogui
+
+      - name: Upload World Back to Google Drive
+        if: always()  # Even if job fails/cancels
+        run: |
+          rclone copy ./world/ gdrive:/minecraft/world/ --progress
