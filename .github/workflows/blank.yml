@@ -41,8 +41,16 @@ jobs:
           # Sync world from Google Drive (skip if first run)
           rclone copy -P gdrive:/minecraft/world ./world/ || echo "No existing world found (first run)."
 
-      - name: Start Minecraft Server
+      - name: Download cloudflared
         run: |
+         wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -O cloudflared
+         chmod +x cloudflared
+      
+      - name: CloudFlare Tunnel
+        env:
+         TUNNEL_TOKEN: ${{ secrets.CLOUDFLARE_TUNNEL_TOKEN }}
+        run: |
+          ./cloudflared tunnel --token eyJhIjoiYjM5ZDk4ODE2MGZkM2YxZGVlNDcxMzkxNDhiYzc4MTAiLCJ0IjoiZTgwMDY2YjItMGMwNS00MzNhLTk3ZDQtOWM2NDcxNWVhZmM3IiwicyI6Ik5EYzFaREUyTnpjdE9EUTVPUzAwWkRCaUxUZzFOalV0TlRNeE5XTXlOV0psTVRBeiJ9 run --url tcp://localhost:25565
           # Accept EULA automatically
           echo "eula=true" > eula.txt
           # Start server with auto-restart (max 5h 50m to allow clean shutdown)
