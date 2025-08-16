@@ -1,0 +1,22 @@
+repeat-message-seconds: 3 
+
+kick-timeout-seconds: 300 # Player kicked after X seconds (Default is 5 minutes) if not logged in/registered.
+
+message: # Configureable messages
+  register: "§cPlease register to continue. Use /register <password> <password>"
+  login: "§ePlease log in to continue. Use /login <password>"
+  timeout: "§cLogin timed out after %seconds% seconds."
+  already_registered: "§cYou are already registered."
+  not_registered: "§cYou are not registered."
+  register_mismatch: "§cPasswords do not match."
+  register_success: "§aSuccessfully registered and logged in."
+  already_loggedin: "§eYou are already logged in."
+  login_success: "§aLogin successful."
+  login_fail: "§cIncorrect password."
+  too_many_attempts: "§cToo many incorrect attempts. Kicked."
+  account_deleted: "§aYour account has been deleted."
+  not_op: "§cYou must be OP to use this command."
+  changepass_usage: "§cUsage: /changepass <player> <newpass>"
+  changepass_success: "§aPassword for %player% has been changed."
+  changepass_notify: "§eYour password has been changed by an admin. New password: §f%newpass%"
+  player_not_online: "§cThat player is not online."
