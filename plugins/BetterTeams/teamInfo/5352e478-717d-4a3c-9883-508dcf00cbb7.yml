@@ -1,0 +1,13 @@
+name: dark
+description: ''
+open: false
+pvp: false
+anchor: false
+home: world:-417.31946148581005:63.0:-434.5000060903024:86.99997:90.0
+color: '6'
+chests: []
+players:
+- 4c7680a1-ded0-39ab-bed0-11293c3a2bc0,OWNER
+anchoredPlayers: []
+level: 1
+tag: ''

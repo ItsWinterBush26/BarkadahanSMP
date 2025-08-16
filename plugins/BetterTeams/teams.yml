@@ -1,6 +1,8 @@
 storageType: YAML
 teamNameLookup:
 - owner:88715353-9d5a-412f-a1f9-597f60201806
+- dark:5352e478-717d-4a3c-9883-508dcf00cbb7
 playerLookup:
 - f3e9bf49-605b-3f6a-8cd6-099b6e01dac0:88715353-9d5a-412f-a1f9-597f60201806
+- 4c7680a1-ded0-39ab-bed0-11293c3a2bc0:5352e478-717d-4a3c-9883-508dcf00cbb7
 chestClaims: []
