@@ -1,0 +1,70 @@
+
+#Configuration
+
+timeout: 30
+wait: 3
+wait_disabled_worlds:
+  - 'spawn'
+block_commands: true
+blocked_commands:
+  whitelist: false
+  commands:
+    - "spawn"
+    - "tpa"
+    - "tpaccept"
+    - "tpdeny"
+    - "rtp"
+
+#Messages
+
+reloaded: "&aConfiguration reloaded!"
+tpa_self: "&cYou can't teleport to yourself!"
+tparesponse_self: "&cYou can't respond to yourself!"
+tpa_usage: "&cYou have to specify a player!"
+tpa_not_online: "&cPlayer isn't online!"
+tpa_already_sent: "&cYou have already asked this player!"
+hover: "&8>>> &7Click &8<<<"
+tpa: "&7Player &#ff0073&l%player% &7has sent you a teleport request."
+tpa_sent: "&7You sent a teleport request to &f%player%&7."
+tpa_not_sent: "&cYou haven't received a request from this player!"
+tpa_accepted: "&7You have accepted &f%player%'s &7teleport request."
+tpa_accepted_other: "&7Player &f%player% &7accepted your teleport request."
+tpa_rejected: "&7You have rejected &f%player%'s &7teleport request."
+tpa_rejected_other: "&7Player &f%player% &7has rejected your teleport request."
+teleport_command: "&cYou can't use this command while teleporting!"
+accept: "&aaccept"
+separator: " &8/ "
+deny: "&cdeny"
+teleport:
+  title:
+    enabled: true
+    title: "&a&lTeleportation"
+    subtitle: "&7don't move for &f%time% s"
+    fadein: 15
+    stay: 20
+    fadeout: 15
+  message:
+    enabled: false
+    message: "&a&lTeleportation &7don't move for &f%time% seconds."
+teleport_cancel:
+  title:
+    enabled: true
+    title: "&c&lTeleportation"
+    subtitle: "&7teleportation cancelled"
+    fadein: 15
+    stay: 20
+    fadeout: 15
+  message:
+    enabled: false
+    message: "&c&lTeleportation &7teleportation cancelled."
+teleport_success:
+  title:
+    enabled: true
+    title: "&a&lTeleportation"
+    subtitle: "&7teleportation success"
+    fadein: 15
+    stay: 20
+    fadeout: 15
+  message:
+    enabled: false
+    message: "&a&lTeleportation &7teleportation success."
