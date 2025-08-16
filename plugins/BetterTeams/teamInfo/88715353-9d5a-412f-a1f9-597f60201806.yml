@@ -8,6 +8,7 @@ color: '6'
 chests: []
 players:
 - f3e9bf49-605b-3f6a-8cd6-099b6e01dac0,OWNER
+- 9c82bf93-fdcc-37a8-8e93-a99d07cd0b5b,DEFAULT
 anchoredPlayers: []
 level: 1
 tag: ''
