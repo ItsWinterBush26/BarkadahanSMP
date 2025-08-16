@@ -1,0 +1,13 @@
+name: Tryant
+description: ''
+open: false
+pvp: false
+anchor: false
+home: ''
+color: '6'
+chests: []
+players:
+- d56d0674-158a-34a2-8f4a-ea85a1426e46,OWNER
+anchoredPlayers: []
+level: 1
+tag: ''
