@@ -1,4 +1,6 @@
 storageType: YAML
-teamNameLookup: []
-playerLookup: []
+teamNameLookup:
+- owner:88715353-9d5a-412f-a1f9-597f60201806
+playerLookup:
+- f3e9bf49-605b-3f6a-8cd6-099b6e01dac0:88715353-9d5a-412f-a1f9-597f60201806
 chestClaims: []

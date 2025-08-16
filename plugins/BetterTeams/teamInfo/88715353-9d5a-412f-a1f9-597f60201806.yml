@@ -1,0 +1,13 @@
+name: Owner
+description: ''
+open: false
+pvp: false
+anchor: false
+home: ''
+color: '6'
+chests: []
+players:
+- f3e9bf49-605b-3f6a-8cd6-099b6e01dac0,OWNER
+anchoredPlayers: []
+level: 1
+tag: ''
