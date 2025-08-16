@@ -490,6 +490,8 @@ help:
   allychat: Send a message only to your allies
   anchor: Toggles whether you want to respawn at your team's home
   setanchor: Sets your team home's ability to serve as a respawn point
+  echest: View your teams ender chest
+  setwarp: Set a warp for the rest of your team
 helpArg:
   delhome: ''
   echest: ''
