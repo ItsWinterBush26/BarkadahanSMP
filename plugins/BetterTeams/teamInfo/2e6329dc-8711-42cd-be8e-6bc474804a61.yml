@@ -7,6 +7,7 @@ home: ''
 color: '5'
 chests: []
 players:
+- 7b41bb29-85f0-371f-b6f6-513449ee6225,DEFAULT
 - 84d9d479-c71d-3124-8f02-c4161b1ab078,OWNER
 anchoredPlayers: []
 level: 1
