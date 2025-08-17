@@ -2,14 +2,14 @@
 
 GriefPrevention:
   SeaLevelOverrides:
-    world: -1
-    world_nether: -1
-    world_the_end: -1
+    BarkadahanSMP: -1
+    BarkadahanSMP_nether: -1
+    BarkadahanSMP_the_end: -1
   Claims:
     Mode:
-      world: Survival
-      world_nether: Disabled
-      world_the_end: Disabled
+      BarkadahanSMP_nether: Disabled
+      BarkadahanSMP_the_end: Disabled
+      BarkadahanSMP: Survival
     PreventGlobalMonsterEggs: true
     PreventTheft: true
     ProtectCreatures: true
@@ -72,9 +72,9 @@ GriefPrevention:
     Logout Message Delay In Seconds: 0
   PvP:
     RulesEnabledInWorld:
-      world: true
-      world_nether: true
-      world_the_end: true
+      BarkadahanSMP: true
+      BarkadahanSMP_nether: true
+      BarkadahanSMP_the_end: true
     ProtectFreshSpawns: true
     PunishLogout: true
     CombatTimeoutSeconds: 15
