@@ -1,0 +1,13 @@
+name: VoidWalker
+description: ''
+open: false
+pvp: false
+anchor: false
+home: ''
+color: '6'
+chests: []
+players:
+- 84d9d479-c71d-3124-8f02-c4161b1ab078,OWNER
+anchoredPlayers: []
+level: 1
+tag: VOID
