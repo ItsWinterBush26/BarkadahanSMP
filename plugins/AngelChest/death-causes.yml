@@ -1,0 +1,207 @@
+# You can change the name for the death causes displayed in the hologram.
+
+AREA_EFFECT_CLOUD: area effect cloud
+ARROW: arrow
+AXOLOTL: axolotl
+BAT: bat
+BEE: bee
+BLAZE: blaze
+BLOCK_EXPLOSION: explosion
+CAVE_SPIDER: cave spider
+CONTACT: contact
+CRAMMING: cramming
+CREEPER: creeper
+CUSTOM: custom
+DRAGON_BREATH: dragon breath
+DRAGON_FIREBALL: dragon fireball
+DROWNED: drowned
+DROWNING: drowning
+DRYOUT: dryout
+ELDER_GUARDIAN: elder guardian
+ENDER_CRYSTAL: ender crystal
+ENDER_DRAGON: ender dragon
+ENDERMAN: enderman
+ENDERMITE: endermite
+ENTITY_EXPLOSION: explosion
+EVOKER: evoker
+EVOKER_FANGS: evoker fangs
+FALL: fall
+FALLING_BLOCK: falling block
+FIRE: fire
+FIRE_TICK: fire
+FIREBALL: fireball
+FLY_INTO_WALL: flying into wall
+FOX: fox
+FREEZE: freeze
+GHAST: ghast
+GIANT: giant
+GOAT: goat
+GUARDIAN: guardian
+HOGLIN: hoglin
+HOT_FLOOR: hot floor
+HUSK: husk
+ILLUSIONER: illusioner
+IRON_GOLEM: iron golem
+LAVA: lava
+LIGHTNING: lightning
+LLAMA: llama
+LLAMA_SPIT: llama
+MAGIC: magic
+MAGMA_CUBE: magma cube
+MELTING: melting
+MINECART_TNT: tnt minecart
+PANDA: panda
+PHANTOM: phantom
+PIGLIN: piglin
+PIGLIN_BRUTE: piglin brute
+PILLAGER: pillager
+POISON: poison
+POLAR_BEAR: polar bear
+PRIMED_TNT: tnt
+PUFFERFISH: pufferfish
+RAVAGER: ravager
+SHULKER: shulker
+SHULKER_BULLET: shulker bullet
+SILVERFISH: silverfish
+SKELETON: skeleton
+SKELETON_HORSE: skeleton horse
+SLIME: slime
+SMALL_FIREBALL: fireball
+SNOWBALL: snowball
+SPECTRAL_ARROW: spectral arrow
+SPIDER: spider
+SPLASH_POTION: splash potion
+STARVATION: starvation
+STRAY: stray
+STRIDER: strider
+SUFFOCATION: suffocation
+SUICIDE: suicide
+THORNS: thorns
+TRADER_LLAMA: trader llama
+TRIDENT: trident
+VEX: vex
+VINDICATOR: vindicator
+VOID: void
+WITCH: witch
+WITHER: wither
+WITHER_SKELETON: wither skeleton
+WOLF: wolf
+ZOGLIN: zogline
+ZOMBIE: zombie
+ZOMBIE_HORSE: zombie horse
+ZOMBIE_VILLAGER: zombie villager
+ZOMBIFIED_PIGLIN: zombified piglin
+UNKNOWN: unknown
+
+# The following death causes should NEVER appear, because they are replaced with more specific ones (e.g. arrow instead of projectile)
+ENTITY_ATTACK: entity attack
+ENTITY_SWEEP_ATTACK: entity sweep attack
+PLAYER: player
+PROJECTILE: projectile
+
+
+#########################
+##### Translations ######
+#########################
+
+# Here are some community made translations - to use one, just uncomment them by removing the
+# single hashtag (#) symbol at the beginning of each line. Do NOT uncomment the name of the language.
+# Of course you can also edit the translations.
+
+##### Spanish
+#AREA_EFFECT_CLOUD: Asfixiado por una nube tóxica
+#ARROW: Asesinado por una flecha
+#AXOLOTL: Asesinado por un Ajolote
+#BAT: Asesinado por Murciélago
+#BEE: Asesinado por una Abeja
+#BLAZE: Asesinado por un Blaze
+#BLOCK_EXPLOSION: Muerto por una explosión
+#CAVE_SPIDER: Asesinado por una Araña de Cueva
+#CONTACT: Muerto por contacto
+#CRAMMING: Muerto por embutido
+#CREEPER: Asesinado por un Creeper
+#CUSTOM: Fallecimiento personal
+#DRAGON_BREATH: Asesinado por el Aliento de Dragón
+#DRAGON_FIREBALL: Asesinado por el Aliento de Dragón
+#DROWNED: Asesinado por un Ahogado
+#DROWNING: Muerto por ahogamiento
+#DRYOUT: Muerto por deshidratación
+#ELDER_GUARDIAN: Asesinado por un Guardián Anciano
+#ENDER_CRYSTAL: Asesinado por un Cristal de Ender
+#ENDER_DRAGON: Asesinado por un Dragón
+#ENDERMAN: Asesinado por un Enderman
+#ENDERMITE: Asesinado por un Endermite
+#ENTITY_EXPLOSION: Muerto por una explosión
+#EVOKER: Asesinado por un Invocador
+#EVOKER_FANGS: Asesinado por un Invocador
+#FALL: Muerto por caída
+#FALLING_BLOCK: Muerto por caída de bloques
+#FIRE: Chamuscado por el fuego
+#FIRE_TICK: Chamuscado por el fuego
+#FIREBALL: Chamuscado por una Bola de Fuego
+#FLY_INTO_WALL: Estampado contra una pared
+#FOX: Asesinado por un Zorro
+#FREEZE: Muerto por congelación
+#GHAST: Asesinado por un Ghast
+#GIANT: Asesinado por un Gigante
+#GOAT: Asesinado por una Cabra
+#GUARDIAN: Asesinado por un Guardián
+#HOGLIN: Asesinado por un Hoglin
+#HOT_FLOOR: Asfixiado por calentamiento del suelo
+#HUSK: Asesinado por un Zombi Momificado
+#ILLUSIONER: Asesinado por un Ilusionista
+#IRON_GOLEM: Asesinado por un Golem de Hierro
+#LAVA: Derretido en la lava
+#LIGHTNING: Electrocutado por un rayo
+#LLAMA: Asesinado por una Llama
+#LLAMA_SPIT: Asesinado a escupitajos
+#MAGIC: Asesinado con Magia
+#MAGMA_CUBE: Asesinado por un Cubo de Magma
+#MELTING: Muerte fundente
+#MINECART_TNT: Dinamitado
+#PANDA: Desgarrado por un Panda
+#PHANTOM: Asesinado por un Fantasma
+#PIGLIN: Asesinado por un Piglin
+#PIGLIN_BRUTE: Asesinado por un Piglin Bruto
+#PILLAGER: Asesinado por un Saqueador
+#POISON: Envenenado
+#POLAR_BEAR: Asesinado por un Oso Polar
+#PRIMED_TNT: Dinamitado
+#PUFFERFISH: Asesinado por un Pez Globo
+#RAVAGER: Asesinado por un Devastador
+#SHULKER: Asesinado por un Shulker
+#SHULKER_BULLET: Asesinado por un Proyectil de Shulker
+#SILVERFISH: Asesinado por una Lepisma
+#SKELETON: Asesinado por un Esqueleto
+#SKELETON_HORSE: Asesinado por un Caballo Esqueleto
+#SLIME: Baboseado
+#SMALL_FIREBALL: Chamuscado con una Bola de Fuego
+#SNOWBALL: Golpeado con Bolas de Nieve
+#SPECTRAL_ARROW: Atravesado con una Flecha Espectral
+#SPIDER: Asesinado por una Araña
+#SPLASH_POTION: Envenenado
+#STARVATION: Muerto de Hambre
+#STRAY: Asesinado por un Esqueleto Invernal
+#STRIDER: Asesinado por un Lavagante
+#SUFFOCATION: Enterrado en Bloques
+#SUICIDE: Suicidado
+#THORNS: Desangrado por multitud de Espinas
+#TRADER_LLAMA: Asesinado por una Llama Ambulante
+#TRIDENT: Empalado por un Tridente
+#VEX: Asesinado por un Vex
+#VINDICATOR: Asesinado por un Vindicador
+#VOID: Muerto por Vacío
+#WITCH: Asesinado por una Bruja
+#WITHER: Asesinado por un Wither
+#WITHER_SKELETON: Asesinado por un Wither Esqueleto
+#WOLF: Asesinado por un Lobo
+#ZOGLIN: Asesinado por un Zoglin
+#ZOMBIE: Asesinado por un Zombi
+#ZOMBIE_HORSE: Asesinado por un Caballo Zombi
+#ZOMBIE_VILLAGER: Asesinado por un Aldeano Zombi
+#ZOMBIFIED_PIGLIN: Asesinado por un Piglin Zombificado
+#UNKNOWN: Muerte desconocida
+#ENTITY_ATTACK: Asesinado por el ataque de criaturas
+#ENTITY_SWEEP_ATTACK: Asesinado por una orda de criaturas
+#PLAYER: Asesinado por un jugador
+#PROJECTILE: Atravesado por un proyectil
