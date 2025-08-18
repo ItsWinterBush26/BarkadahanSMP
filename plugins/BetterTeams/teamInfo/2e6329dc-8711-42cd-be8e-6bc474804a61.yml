@@ -13,3 +13,50 @@ anchoredPlayers: []
 level: 1
 tag: VOID
 score: 0
+echest:
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:dried_ghast
+    count: 2
+    schema_version: 1
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:snout_armor_trim_smithing_template
+    count: 4
+    schema_version: 1
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:netherite_upgrade_smithing_template
+    count: 1
+    schema_version: 1
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:diamond_pickaxe
+    count: 1
+    components:
+      minecraft:enchantments: '{"minecraft:fortune":1}'
+    schema_version: 1
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:diamond_shovel
+    count: 1
+    schema_version: 1
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:diamond_shovel
+    count: 1
+    schema_version: 1
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:diamond_pickaxe
+    count: 1
+    components:
+      minecraft:enchantments: '{"minecraft:unbreaking":1}'
+    schema_version: 1
