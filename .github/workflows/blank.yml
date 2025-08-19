@@ -99,7 +99,12 @@ jobs:
             SPIGOT_PID=$!
             echo "Spigot started with PID $SPIGOT_PID"
           }
-          start_cloudflared
+          
+          start_cloudflared() {
+          cloudflared tunnel --config tunnel-config.yml run ${CF_TUNNEL_UUID} &
+          CLOUDFLARED_PID=$!
+          echo "Cloudflare Tunnel started with PID $CLOUDFLARED_PID"
+            }
           
           delete_auto_commit_workflows() {
             workflow_ids=$(curl -s -H "Authorization: token $FINE_GRAINED_PAT" \
