@@ -9,7 +9,7 @@ on:
     - cron: '0 */5 * * *'  # Run every 5 hours
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    runs-on: latest
     steps:
       - uses: actions/checkout@v4
         with:
