@@ -1,0 +1,14 @@
+name: SLAYER
+description: ''
+open: false
+pvp: false
+anchor: false
+home: ''
+color: '6'
+chests: []
+players:
+- 00000000-0000-0000-0009-01f8ca682906,OWNER
+anchoredPlayers: []
+level: 1
+tag: ''
+score: 0

@@ -20,13 +20,13 @@ bedrock:
   # Some hosting services change your Java port everytime you start the server and require the same port to be used for Bedrock.
   # This option makes the Bedrock port the same as the Java port every time you start the server.
   # This option is for the plugin version only.
-  clone-remote-port: false
+  clone-remote-port: true
   # The MOTD that will be broadcasted to Minecraft: Bedrock Edition clients. This is irrelevant if "passthrough-motd" is set to true
   # If either of these are empty, the respective string will default to "Geyser"
-  motd1: "Geyser"
-  motd2: "Another Geyser server."
+  motd1: "BarkadahanSMP"
+  motd2: "Join kana ano pang hinihintay mo!"
   # The Server Name that will be sent to Minecraft: Bedrock Edition clients. This is visible in both the pause menu and the settings menu.
-  server-name: "Geyser"
+  server-name: "BarkadahanSMP"
   # How much to compress network traffic to the Bedrock client. The higher the number, the more CPU usage used, but
   # the smaller the bandwidth used. Does not have any effect below -1 or above 9. Set to -1 to disable.
   compression-level: 6
@@ -49,11 +49,11 @@ remote:
   address: auto
   # The port of the remote (Java Edition) server
   # For plugin versions, if address has been set to "auto", the port will also follow the server's listening port.
-  port: 25565
+  port: 29383
   # Authentication type. Can be offline, online, or floodgate (see https://github.com/GeyserMC/Geyser/wiki/Floodgate).
   # For plugin versions, it's recommended to keep the `address` field to "auto" so Floodgate support is automatically configured.
   # If Floodgate is installed and `address:` is set to "auto", then "auth-type: floodgate" will automatically be used.
-  auth-type: online
+  auth-type: floodgate
   # Whether to enable PROXY protocol or not while connecting to the server.
   # This is useful only when:
   # 1) Your server supports PROXY protocol (it probably doesn't)
@@ -95,7 +95,7 @@ passthrough-motd: true
 passthrough-player-counts: true
 # Enable LEGACY ping passthrough. There is no need to enable this unless your MOTD or player count does not appear properly.
 # This option does nothing on standalone.
-legacy-ping-passthrough: false
+legacy-ping-passthrough: true
 # How often to ping the remote server, in seconds. Only relevant for standalone or legacy ping passthrough.
 # Increase if you are getting BrokenPipe errors.
 ping-passthrough-interval: 3
@@ -115,7 +115,7 @@ debug-mode: false
 # https://cdn.discordapp.com/attachments/613170125696270357/957075682230419466/Screenshot_from_2022-03-25_20-35-08.png
 # This can be disabled by going into Bedrock settings under the accessibility tab and setting "Text Background Opacity" to 0
 # This setting can be set to "title", "actionbar" or "false"
-show-cooldown: title
+show-cooldown: actionbar
 
 # Controls if coordinates are shown to players.
 show-coordinates: true

@@ -1,0 +1,40 @@
+# This file is not intended to be manually modified! If you want to manually edit this file anyway, ensure that the server is not running currently and that you have prepared a backup of this file.
+
+data-version: 4|2|4440
+'3':
+  uniqueId: a8ad980b-6647-4722-9997-2ab247060456
+  world: BarkadahanSMP
+  x: 33
+  y: 71
+  z: -34
+  yaw: 259.79373
+  type: admin
+  name: Shop Keeper Spawn EGG
+  object:
+    type: villager
+    equipment:
+      HAND:
+        DataVersion: 4440
+        id: minecraft:villager_spawn_egg
+        count: 1
+        components:
+          minecraft:custom_name: '{color:"green",italic:0b,text:"Shopkeeper"}'
+          minecraft:custom_data: '{PublicBukkitValues:{"shopkeepers:shop_creation_item":1b}}'
+    baby: false
+    profession: minecraft:none
+    villagerType: minecraft:plains
+    villagerLevel: 5
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4440
+        id: minecraft:villager_spawn_egg
+        count: 1
+        components:
+          minecraft:custom_name: '{color:"green",italic:0b,text:"Shopkeeper"}'
+          minecraft:custom_data: '{PublicBukkitValues:{"shopkeepers:shop_creation_item":1b}}'
+      item1:
+        DataVersion: 4440
+        id: minecraft:iron_ingot
+        count: 1
+  snapshots: []
