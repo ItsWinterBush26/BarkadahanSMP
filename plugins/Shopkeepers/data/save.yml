@@ -38,3 +38,21 @@ data-version: 4|2|4440
         id: minecraft:iron_ingot
         count: 1
   snapshots: []
+'4':
+  uniqueId: d16c6368-9116-4bfd-b3bd-564013b92247
+  world: BarkadahanSMP
+  x: -22
+  y: 44
+  z: -5
+  yaw: 172.4649
+  type: trade
+  name: ''
+  object:
+    type: creaking
+  owner uuid: 6f9f80aa-0788-3fcc-b024-da0395a11896
+  owner: LPXBARNY
+  chestx: -22
+  chesty: 43
+  chestz: -5
+  offers: {}
+  snapshots: []
