@@ -56,3 +56,25 @@ data-version: 4|2|4440
   chestz: -5
   offers: {}
   snapshots: []
+'5':
+  uniqueId: 438ae342-5267-4fce-8996-fc4132e758de
+  world: BarkadahanSMP
+  x: -2
+  y: 71
+  z: -56
+  yaw: 272.4114
+  type: book
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:none
+    villagerType: minecraft:plains
+    villagerLevel: 1
+  owner uuid: f3e9bf49-605b-3f6a-8cd6-099b6e01dac0
+  owner: ItsWinterBush
+  chestx: -1
+  chesty: 71
+  chestz: -53
+  offers: {}
+  snapshots: []
