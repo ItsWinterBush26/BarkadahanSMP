@@ -42,9 +42,9 @@ data-version: 4|2|4440
   uniqueId: d16c6368-9116-4bfd-b3bd-564013b92247
   world: BarkadahanSMP
   x: -22
-  y: 44
-  z: -5
-  yaw: 180.0
+  y: 43
+  z: -11
+  yaw: 355.7882
   type: trade
   name: ''
   object:
