@@ -1,0 +1,15 @@
+name: LPX
+description: ''
+open: false
+pvp: false
+anchor: false
+home: ''
+color: '6'
+chests: []
+players:
+- 6f9f80aa-0788-3fcc-b024-da0395a11896,DEFAULT
+- 00000000-0000-0000-0009-01f4ababf2d7,DEFAULT
+- 440be1b6-ce72-3aaa-966f-caeb57100cd6,OWNER
+anchoredPlayers: []
+level: 1
+tag: red
