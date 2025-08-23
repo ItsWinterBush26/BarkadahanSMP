@@ -76,5 +76,6 @@ data-version: 4|2|4440
   chestx: -1
   chesty: 71
   chestz: -53
+  notifyOnTrades: false
   offers: {}
   snapshots: []
