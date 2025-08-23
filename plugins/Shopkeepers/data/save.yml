@@ -76,5 +76,11 @@ data-version: 4|2|4440
   chestx: 0
   chesty: 71
   chestz: -47
-  offers: {}
+  offers:
+    '1':
+      item:
+        DataVersion: 4440
+        id: minecraft:carrot
+        count: 1
+      price: 1
   snapshots: []
