@@ -59,10 +59,10 @@ data-version: 4|2|4440
 '5':
   uniqueId: 438ae342-5267-4fce-8996-fc4132e758de
   world: BarkadahanSMP
-  x: -2
+  x: -1
   y: 71
-  z: -56
-  yaw: 272.4114
+  z: -54
+  yaw: 264.32516
   type: book
   name: ''
   object:
